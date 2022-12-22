@@ -15,6 +15,8 @@
 		4B2835A329543AF000DACA59 /* CalendarHome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B2835A229543AF000DACA59 /* CalendarHome.swift */; };
 		4B2835A629543DE000DACA59 /* FriendHome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B2835A529543DE000DACA59 /* FriendHome.swift */; };
 		4B2835C2295442AF00DACA59 /* Timer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B2835C1295442AF00DACA59 /* Timer.swift */; };
+		5B2C4D0B2954B55500BE23D2 /* Stopwatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B2C4D0A2954B55500BE23D2 /* Stopwatch.swift */; };
+		5B2C4D0D2954B8CF00BE23D2 /* StopManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B2C4D0C2954B8CF00BE23D2 /* StopManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +29,8 @@
 		4B2835A229543AF000DACA59 /* CalendarHome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarHome.swift; sourceTree = "<group>"; };
 		4B2835A529543DE000DACA59 /* FriendHome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendHome.swift; sourceTree = "<group>"; };
 		4B2835C1295442AF00DACA59 /* Timer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Timer.swift; sourceTree = "<group>"; };
+		5B2C4D0A2954B55500BE23D2 /* Stopwatch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stopwatch.swift; sourceTree = "<group>"; };
+		5B2C4D0C2954B8CF00BE23D2 /* StopManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +83,8 @@
 		4B28359D29543AB100DACA59 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				5B2C4D0A2954B55500BE23D2 /* Stopwatch.swift */,
+				5B2C4D0C2954B8CF00BE23D2 /* StopManager.swift */,
 				4B28359E29543AB800DACA59 /* Calendar */,
 				4B2835A429543DD500DACA59 /* Friend */,
 				4B28359F29543ACC00DACA59 /* Setup */,
@@ -182,9 +188,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				4B2835A629543DE000DACA59 /* FriendHome.swift in Sources */,
+				5B2C4D0B2954B55500BE23D2 /* Stopwatch.swift in Sources */,
 				4B2835A329543AF000DACA59 /* CalendarHome.swift in Sources */,
 				4B28359229543AA700DACA59 /* ContentView.swift in Sources */,
 				4B2835C2295442AF00DACA59 /* Timer.swift in Sources */,
+				5B2C4D0D2954B8CF00BE23D2 /* StopManager.swift in Sources */,
 				4B28359029543AA700DACA59 /* TODOApp.swift in Sources */,
 				4B2835A129543ADD00DACA59 /* Calendar.swift in Sources */,
 			);
