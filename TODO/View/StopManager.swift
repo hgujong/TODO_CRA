@@ -7,6 +7,7 @@
 
 import Foundation
 import SwiftUI
+import UIKit
 
 class StopManager: ObservableObject {
     
@@ -17,22 +18,40 @@ class StopManager: ObservableObject {
     }
     @Published var mode: stopWatchMode = .stoped
     
-    
-    @Published var seconds  = 0.0
+    @Published var hours = 0
+    @Published var minutes = 0
+    @Published var seconds  = 0
     var timer = Timer()
+    
+    
     
     func start() {
         mode = .runnig
-        //timer = Timer.scheduledTimer(withTimeInterval: 0.1, repeats: true){ timer in
-            seconds += 0.1
+        timer = Timer.scheduledTimer(withTimeInterval: 1, repeats: true){ timer in
+            seconds += 1
+            if seconds == 60 {
+                minutes += 1
+                seconds = 0
+            }
+            
+            if minutes == 60 {
+                hours += 1
+                minutes = 0
+            }
         }
+            
+        
+    }
     func pause(){
-        //timer.invalidate()
+        
+        timer.invalidate()
         mode = .paused
     }
     
     func stop() {
-        //timer.invalidate()
+        timer.invalidate()
+        hours = 0
+        minutes = 0
         seconds = 0
         mode = .stoped
     }

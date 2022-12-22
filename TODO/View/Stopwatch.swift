@@ -13,7 +13,7 @@ struct Stopwatch: View {
     
     var body: some View {
         VStack{
-            Text(String(format: "%.1f",stopManager.seconds))
+            Text(String(format: "%02i:%02i:%02i",stopManager.hours,stopManager.minutes,stopManager.seconds))
                 .font(.system(size: 60))
             
             
