@@ -17,6 +17,8 @@
 		4B2835C2295442AF00DACA59 /* Timer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B2835C1295442AF00DACA59 /* Timer.swift */; };
 		5B2C4D0B2954B55500BE23D2 /* Stopwatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B2C4D0A2954B55500BE23D2 /* Stopwatch.swift */; };
 		5B2C4D0D2954B8CF00BE23D2 /* StopManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B2C4D0C2954B8CF00BE23D2 /* StopManager.swift */; };
+		8268EC3C295541F4008F97F9 /* profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8268EC3B295541F4008F97F9 /* profile.swift */; };
+		8268EC3E295541FC008F97F9 /* edit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8268EC3D295541FC008F97F9 /* edit.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +33,8 @@
 		4B2835C1295442AF00DACA59 /* Timer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Timer.swift; sourceTree = "<group>"; };
 		5B2C4D0A2954B55500BE23D2 /* Stopwatch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stopwatch.swift; sourceTree = "<group>"; };
 		5B2C4D0C2954B8CF00BE23D2 /* StopManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopManager.swift; sourceTree = "<group>"; };
+		8268EC3B295541F4008F97F9 /* profile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = profile.swift; sourceTree = "<group>"; };
+		8268EC3D295541FC008F97F9 /* edit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = edit.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +89,7 @@
 			children = (
 				5B2C4D0A2954B55500BE23D2 /* Stopwatch.swift */,
 				5B2C4D0C2954B8CF00BE23D2 /* StopManager.swift */,
+				8268EC3A295541DE008F97F9 /* Profile */,
 				4B28359E29543AB800DACA59 /* Calendar */,
 				4B2835A429543DD500DACA59 /* Friend */,
 				4B28359F29543ACC00DACA59 /* Setup */,
@@ -115,6 +120,15 @@
 				4B2835A529543DE000DACA59 /* FriendHome.swift */,
 			);
 			path = Friend;
+			sourceTree = "<group>";
+		};
+		8268EC3A295541DE008F97F9 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				8268EC3B295541F4008F97F9 /* profile.swift */,
+				8268EC3D295541FC008F97F9 /* edit.swift */,
+			);
+			path = Profile;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -187,6 +201,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8268EC3C295541F4008F97F9 /* profile.swift in Sources */,
 				4B2835A629543DE000DACA59 /* FriendHome.swift in Sources */,
 				5B2C4D0B2954B55500BE23D2 /* Stopwatch.swift in Sources */,
 				4B2835A329543AF000DACA59 /* CalendarHome.swift in Sources */,
@@ -195,6 +210,7 @@
 				5B2C4D0D2954B8CF00BE23D2 /* StopManager.swift in Sources */,
 				4B28359029543AA700DACA59 /* TODOApp.swift in Sources */,
 				4B2835A129543ADD00DACA59 /* Calendar.swift in Sources */,
+				8268EC3E295541FC008F97F9 /* edit.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
