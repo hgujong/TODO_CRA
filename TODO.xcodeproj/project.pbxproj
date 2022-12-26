@@ -14,9 +14,12 @@
 		4B2835A129543ADD00DACA59 /* Calendar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B2835A029543ADD00DACA59 /* Calendar.swift */; };
 		4B2835A329543AF000DACA59 /* CalendarHome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B2835A229543AF000DACA59 /* CalendarHome.swift */; };
 		4B2835A629543DE000DACA59 /* FriendHome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B2835A529543DE000DACA59 /* FriendHome.swift */; };
+		4B933AEF29595FF5001B29BD /* ModelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B933AEE29595FF5001B29BD /* ModelData.swift */; };
+		4B933AF12959603C001B29BD /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B933AF02959603C001B29BD /* Profile.swift */; };
+		4B933AF3295963CF001B29BD /* ProfileHost.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B933AF2295963CF001B29BD /* ProfileHost.swift */; };
+		4B933AF5295963DF001B29BD /* ProfileSummary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B933AF4295963DF001B29BD /* ProfileSummary.swift */; };
+		4B933AF7295967AA001B29BD /* ProfileEditor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B933AF6295967AA001B29BD /* ProfileEditor.swift */; };
 		5B41DA732955EB52005476DD /* Stopwatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B41DA722955EB52005476DD /* Stopwatch.swift */; };
-		8268EC3C295541F4008F97F9 /* profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8268EC3B295541F4008F97F9 /* profile.swift */; };
-		8268EC3E295541FC008F97F9 /* edit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8268EC3D295541FC008F97F9 /* edit.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,9 +31,12 @@
 		4B2835A029543ADD00DACA59 /* Calendar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Calendar.swift; sourceTree = "<group>"; };
 		4B2835A229543AF000DACA59 /* CalendarHome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarHome.swift; sourceTree = "<group>"; };
 		4B2835A529543DE000DACA59 /* FriendHome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendHome.swift; sourceTree = "<group>"; };
+		4B933AEE29595FF5001B29BD /* ModelData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelData.swift; sourceTree = "<group>"; };
+		4B933AF02959603C001B29BD /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
+		4B933AF2295963CF001B29BD /* ProfileHost.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileHost.swift; sourceTree = "<group>"; };
+		4B933AF4295963DF001B29BD /* ProfileSummary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileSummary.swift; sourceTree = "<group>"; };
+		4B933AF6295967AA001B29BD /* ProfileEditor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileEditor.swift; sourceTree = "<group>"; };
 		5B41DA722955EB52005476DD /* Stopwatch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stopwatch.swift; sourceTree = "<group>"; };
-		8268EC3B295541F4008F97F9 /* profile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = profile.swift; sourceTree = "<group>"; };
-		8268EC3D295541FC008F97F9 /* edit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = edit.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +69,7 @@
 		4B28358E29543AA700DACA59 /* TODO */ = {
 			isa = PBXGroup;
 			children = (
+				4B933AED29595FE6001B29BD /* Model */,
 				4B28359D29543AB100DACA59 /* View */,
 				4B28358F29543AA700DACA59 /* TODOApp.swift */,
 				4B28359129543AA700DACA59 /* ContentView.swift */,
@@ -84,20 +91,20 @@
 			isa = PBXGroup;
 			children = (
 				5B41DA712955EB20005476DD /* StopWatch */,
-				8268EC3A295541DE008F97F9 /* Profile */,
-				4B28359E29543AB800DACA59 /* Calendar */,
-				4B2835A429543DD500DACA59 /* Friend */,
+				8268EC3A295541DE008F97F9 /* Profiles */,
+				4B28359E29543AB800DACA59 /* Calendars */,
+				4B2835A429543DD500DACA59 /* Friends */,
 				4B28359F29543ACC00DACA59 /* Setup */,
 			);
 			path = View;
 			sourceTree = "<group>";
 		};
-		4B28359E29543AB800DACA59 /* Calendar */ = {
+		4B28359E29543AB800DACA59 /* Calendars */ = {
 			isa = PBXGroup;
 			children = (
 				4B2835A229543AF000DACA59 /* CalendarHome.swift */,
 			);
-			path = Calendar;
+			path = Calendars;
 			sourceTree = "<group>";
 		};
 		4B28359F29543ACC00DACA59 /* Setup */ = {
@@ -108,12 +115,21 @@
 			path = Setup;
 			sourceTree = "<group>";
 		};
-		4B2835A429543DD500DACA59 /* Friend */ = {
+		4B2835A429543DD500DACA59 /* Friends */ = {
 			isa = PBXGroup;
 			children = (
 				4B2835A529543DE000DACA59 /* FriendHome.swift */,
 			);
-			path = Friend;
+			path = Friends;
+			sourceTree = "<group>";
+		};
+		4B933AED29595FE6001B29BD /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				4B933AEE29595FF5001B29BD /* ModelData.swift */,
+				4B933AF02959603C001B29BD /* Profile.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		5B41DA712955EB20005476DD /* StopWatch */ = {
@@ -124,13 +140,14 @@
 			path = StopWatch;
 			sourceTree = "<group>";
 		};
-		8268EC3A295541DE008F97F9 /* Profile */ = {
+		8268EC3A295541DE008F97F9 /* Profiles */ = {
 			isa = PBXGroup;
 			children = (
-				8268EC3B295541F4008F97F9 /* profile.swift */,
-				8268EC3D295541FC008F97F9 /* edit.swift */,
+				4B933AF2295963CF001B29BD /* ProfileHost.swift */,
+				4B933AF4295963DF001B29BD /* ProfileSummary.swift */,
+				4B933AF6295967AA001B29BD /* ProfileEditor.swift */,
 			);
-			path = Profile;
+			path = Profiles;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -203,13 +220,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8268EC3C295541F4008F97F9 /* profile.swift in Sources */,
+				4B933AF12959603C001B29BD /* Profile.swift in Sources */,
 				4B2835A629543DE000DACA59 /* FriendHome.swift in Sources */,
+				4B933AF5295963DF001B29BD /* ProfileSummary.swift in Sources */,
+				4B933AEF29595FF5001B29BD /* ModelData.swift in Sources */,
 				4B2835A329543AF000DACA59 /* CalendarHome.swift in Sources */,
 				4B28359229543AA700DACA59 /* ContentView.swift in Sources */,
 				4B28359029543AA700DACA59 /* TODOApp.swift in Sources */,
+				4B933AF7295967AA001B29BD /* ProfileEditor.swift in Sources */,
+				4B933AF3295963CF001B29BD /* ProfileHost.swift in Sources */,
 				4B2835A129543ADD00DACA59 /* Calendar.swift in Sources */,
-				8268EC3E295541FC008F97F9 /* edit.swift in Sources */,
 				5B41DA732955EB52005476DD /* Stopwatch.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
