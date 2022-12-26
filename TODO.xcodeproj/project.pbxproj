@@ -19,6 +19,11 @@
 		4B933AF3295963CF001B29BD /* ProfileHost.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B933AF2295963CF001B29BD /* ProfileHost.swift */; };
 		4B933AF5295963DF001B29BD /* ProfileSummary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B933AF4295963DF001B29BD /* ProfileSummary.swift */; };
 		4B933AF7295967AA001B29BD /* ProfileEditor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B933AF6295967AA001B29BD /* ProfileEditor.swift */; };
+		5B0C9A672959758400EB22B5 /* Todo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B0C9A662959758400EB22B5 /* Todo.swift */; };
+		5B0C9A6A295975BE00EB22B5 /* TodoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B0C9A69295975BE00EB22B5 /* TodoView.swift */; };
+		5B0C9A6C295975EA00EB22B5 /* SettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B0C9A6B295975EA00EB22B5 /* SettingView.swift */; };
+		5B0C9A6E2959762D00EB22B5 /* TodoStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B0C9A6D2959762D00EB22B5 /* TodoStore.swift */; };
+		5B0C9A70295976B500EB22B5 /* Listview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B0C9A6F295976B500EB22B5 /* Listview.swift */; };
 		5B41DA732955EB52005476DD /* Stopwatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B41DA722955EB52005476DD /* Stopwatch.swift */; };
 /* End PBXBuildFile section */
 
@@ -36,6 +41,11 @@
 		4B933AF2295963CF001B29BD /* ProfileHost.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileHost.swift; sourceTree = "<group>"; };
 		4B933AF4295963DF001B29BD /* ProfileSummary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileSummary.swift; sourceTree = "<group>"; };
 		4B933AF6295967AA001B29BD /* ProfileEditor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileEditor.swift; sourceTree = "<group>"; };
+		5B0C9A662959758400EB22B5 /* Todo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Todo.swift; sourceTree = "<group>"; };
+		5B0C9A69295975BE00EB22B5 /* TodoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoView.swift; sourceTree = "<group>"; };
+		5B0C9A6B295975EA00EB22B5 /* SettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingView.swift; sourceTree = "<group>"; };
+		5B0C9A6D2959762D00EB22B5 /* TodoStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoStore.swift; sourceTree = "<group>"; };
+		5B0C9A6F295976B500EB22B5 /* Listview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Listview.swift; sourceTree = "<group>"; };
 		5B41DA722955EB52005476DD /* Stopwatch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stopwatch.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -90,6 +100,7 @@
 		4B28359D29543AB100DACA59 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				5B0C9A68295975A200EB22B5 /* TodoList */,
 				5B41DA712955EB20005476DD /* StopWatch */,
 				8268EC3A295541DE008F97F9 /* Profiles */,
 				4B28359E29543AB800DACA59 /* Calendars */,
@@ -128,8 +139,20 @@
 			children = (
 				4B933AEE29595FF5001B29BD /* ModelData.swift */,
 				4B933AF02959603C001B29BD /* Profile.swift */,
+				5B0C9A662959758400EB22B5 /* Todo.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		5B0C9A68295975A200EB22B5 /* TodoList */ = {
+			isa = PBXGroup;
+			children = (
+				5B0C9A69295975BE00EB22B5 /* TodoView.swift */,
+				5B0C9A6B295975EA00EB22B5 /* SettingView.swift */,
+				5B0C9A6D2959762D00EB22B5 /* TodoStore.swift */,
+				5B0C9A6F295976B500EB22B5 /* Listview.swift */,
+			);
+			path = TodoList;
 			sourceTree = "<group>";
 		};
 		5B41DA712955EB20005476DD /* StopWatch */ = {
@@ -220,14 +243,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5B0C9A70295976B500EB22B5 /* Listview.swift in Sources */,
 				4B933AF12959603C001B29BD /* Profile.swift in Sources */,
 				4B2835A629543DE000DACA59 /* FriendHome.swift in Sources */,
+				5B0C9A6A295975BE00EB22B5 /* TodoView.swift in Sources */,
+				5B0C9A6C295975EA00EB22B5 /* SettingView.swift in Sources */,
 				4B933AF5295963DF001B29BD /* ProfileSummary.swift in Sources */,
 				4B933AEF29595FF5001B29BD /* ModelData.swift in Sources */,
 				4B2835A329543AF000DACA59 /* CalendarHome.swift in Sources */,
 				4B28359229543AA700DACA59 /* ContentView.swift in Sources */,
 				4B28359029543AA700DACA59 /* TODOApp.swift in Sources */,
+				5B0C9A672959758400EB22B5 /* Todo.swift in Sources */,
 				4B933AF7295967AA001B29BD /* ProfileEditor.swift in Sources */,
+				5B0C9A6E2959762D00EB22B5 /* TodoStore.swift in Sources */,
 				4B933AF3295963CF001B29BD /* ProfileHost.swift in Sources */,
 				4B2835A129543ADD00DACA59 /* Calendar.swift in Sources */,
 				5B41DA732955EB52005476DD /* Stopwatch.swift in Sources */,
