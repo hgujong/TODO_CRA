@@ -26,11 +26,16 @@ struct StopwatchView: View {
         progressTime % 60
     }
 
-    /// Increase progressTime each second
     @State private var timer: Timer?
 
     var body: some View {
         VStack {
+            HStack{
+                Text("Stopwatch")
+                Spacer()
+            }
+            .padding()
+             
             HStack(spacing: 10) {
                 StopwatchUnit(timeUnit: hours, timeUnitText: "HR", color: .black)
                 Text(":")
@@ -47,32 +52,35 @@ struct StopwatchView: View {
 
             HStack {
                 Button(action: {
-                    
+                    if isRunning{
+                        timer?.invalidate()
+                    } else {
                     timer = Timer.scheduledTimer(withTimeInterval: 1, repeats: true, block: { _ in
-                            progressTime += 1
+                        progressTime += 1
                         })
+                    }
                     isRunning.toggle()
                 }) {
                     ZStack {
                         RoundedRectangle(cornerRadius: 15.0)
                             .frame(width: 120, height: 50, alignment: .center)
-                            .foregroundColor(.green)
+                            .foregroundColor(isRunning ? Color.red : Color.green)
 
-                        Text("Start")
+                        Text(isRunning ? "Stop" : "Start")
                             .font(.title)
                             .foregroundColor(.white)
                     }
                 }
 
                 Button(action: {
-                    timer?.invalidate()
+                    progressTime = 0
                 }) {
                     ZStack {
                         RoundedRectangle(cornerRadius: 15.0)
                             .frame(width: 120, height: 50, alignment: .center)
-                            .foregroundColor(.red)
+                            .foregroundColor(.black)
 
-                        Text("Stop")
+                        Text("Reset")
                             .font(.title)
                             .foregroundColor(.white)
                         
